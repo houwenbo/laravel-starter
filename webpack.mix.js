@@ -16,3 +16,15 @@ mix.js('resources/js/app.js', 'public/js')
         // require TailwindCSS
         require("tailwindcss")
     ]);
+
+/*
+ |--------------------------------------------------------------------------
+ | Ziggy Setup
+ |--------------------------------------------------------------------------
+ */
+const path = require("path");
+
+// Rezolve Ziggy
+mix.alias({
+    ziggy: path.resolve("vendor/tightenco/ziggy/dist/vue"),
+});
